@@ -35,20 +35,20 @@ function Navbar() {
                       Explore
                     </p>
                 </li>
-                <li className='navbarListItem' onClick={() => navigate('/offer')}>
+                <li className='navbarListItem' onClick={() => navigate('/offers')}>
                     <OfferIcon 
-                      fill={pathMatchRoute('/offer') ? 'green' : 'light gray'} 
+                      fill={pathMatchRoute('/offers') ? 'green' : 'light gray'} 
                       width='36px' 
                       height='36px' 
                     />
                     <p
                       className={
-                      pathMatchRoute('/offer')
+                      pathMatchRoute('/offers')
                         ? 'navbarListItemNameActive'
                         : 'navbarListItemName'
                       }
                     >
-                      Offer
+                      Offers
                     </p>
                 </li>
                 <li className='navbarListItem' onClick={() => navigate('/profile')}>
